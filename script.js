@@ -41,24 +41,63 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("about bulunmadı");
     }
 
-    const observer = new IntersectionObserver( //Tarayıcı otomatik hesaplar: Scroll  Ekran boyutu Threshold
+    const observer = new IntersectionObserver( //Tarayıcı otomatik hesaplar: Scroll  Ekran boyutu Threshold Yeni bir IntersectionObserver nesnesi oluşturuluyor.
 
 
-        ([entry]) => {
+        ([entry]) => {  // Observer her tetiklendiğinde bir entries dizisi gönderir. Burada array destructuring yapılıyor: Observer her tetiklendiğinde bir entries dizisi gönderir. Burada array destructuring yapılıyor: entries[0] → entry
             console.log(entry.isIntersecting, entry.intersectionRatio);
 
-            if (entry.isIntersecting) {
-                entry.target.classList.add('aktifyazi');
+            if (entry.isIntersecting) { //Eleman threshold koşulunu geçtiyse çalışır.
+                entry.target.classList.add('aktifyazi'); //entry.target 👉 Observer’ın izlediği gerçek DOM elemanı
             } else {
                 entry.target.classList.remove('aktifyazi');
             }
         },
         {
-            threshold: 0.3 // %20 görünürlük
+            threshold: 0.3 // %30 görünürlük
         }
+
 
     );
 
     observer.observe(about); // İzlemeyi başlatıyoruz
 
+
+    const kartlar = document.querySelectorAll(".kart2");
+
+    kartlar.forEach(kartim => {
+        kartim.addEventListener("click", () => {
+            // sadece hover olmayan (mobil) cihazlar
+            if (window.matchMedia("(hover: none)").matches) {
+                kart.classList.toggle("aktif");
+            }
+        });
+    });
+
+
+    const kartlar2 = document.querySelectorAll(".kart");
+
+    const observer2 = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                const aciklama = entry.target.querySelector(".aciklama");
+
+                if (entry.isIntersecting) {
+                    aciklama.classList.add("aktif5");
+                } else {
+                    aciklama.classList.remove("aktif5");
+                }
+            });
+        },
+        {
+            threshold: 0.6   // kartın %60’ı görünüyorsa çalış
+        }
+    );
+
+    kartlar2.forEach(kart => {
+        observer2.observe(kart);
+    });
+
+
 });
+
