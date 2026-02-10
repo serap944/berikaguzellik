@@ -29,6 +29,10 @@
       text-transform: capitalize;
   }
 
+  .logo {
+      text-decoration: none;
+  }
+
   .logo h3,
   .logo p {
 

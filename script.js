@@ -41,10 +41,20 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("about bulunmadı");
     }
 
-    const observer = new IntersectionObserver( //Tarayıcı otomatik hesaplar: Scroll  Ekran boyutu Threshold Yeni bir IntersectionObserver nesnesi oluşturuluyor.
+    const observer = new IntersectionObserver( //gözeten istenilen  alana girerse haber verir
 
-
-        ([entry]) => {  // Observer her tetiklendiğinde bir entries dizisi gönderir. Burada array destructuring yapılıyor: Observer her tetiklendiğinde bir entries dizisi gönderir. Burada array destructuring yapılıyor: entries[0] → entry
+        ([entry]) => {  /* 3. PERDE — “GÖZETMEN RAPOR VERİYOR”
+👇 Şu an en kritik sahnedeyiz:
+([entry]) => {
+Ne oluyor?
+Observer sana bir rapor dosyası gönderir:
+entries = [entry1, entry2, entry3...]
+Ama sen diyorsun ki:
+“Ben sadece ilk oyuncuyu izliyorum.”
+Yani:
+entries[0] → entry
+Bu yüzden:
+([entry]) */
             console.log(entry.isIntersecting, entry.intersectionRatio);
 
             if (entry.isIntersecting) { //Eleman threshold koşulunu geçtiyse çalışır.
