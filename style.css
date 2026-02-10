@@ -426,10 +426,10 @@
 
 
   .about {
-      margin: 30px auto;
+      padding: 100px 30px;
       display: flex;
       flex-direction: column;
-      padding: 25px 10px;
+
 
       opacity: 0;
       transform: translateX(-80px);
