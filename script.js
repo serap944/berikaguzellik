@@ -73,16 +73,6 @@ Bu yüzden:
     observer.observe(about); // İzlemeyi başlatıyoruz
 
 
-    const kartlar = document.querySelectorAll(".kart2");
-
-    kartlar.forEach(kartim => {
-        kartim.addEventListener("click", () => {
-            // sadece hover olmayan (mobil) cihazlar
-            if (window.matchMedia("(hover: none)").matches) {
-                kart.classList.toggle("aktif");
-            }
-        });
-    });
 
 
     const kartlar2 = document.querySelectorAll(".kart");
@@ -106,6 +96,13 @@ Bu yüzden:
 
     kartlar2.forEach(kart => {
         observer2.observe(kart);
+    });
+
+    document.querySelectorAll('.kart2').forEach(kart => {
+        kart.addEventListener('click', () => {
+            // mobilde toggle
+            kart.classList.toggle('aktif');
+        });
     });
 
 
