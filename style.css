@@ -646,7 +646,11 @@
           margin: 10px 0;
       }
 
+      .bottom-bar a {
+          width: 120px;
+          padding: 6px 10px;
 
+      }
 
       @media (max-width: 768px) {
 
