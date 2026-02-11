@@ -206,7 +206,7 @@
 
       opacity: 0;
       transform: translateY(200px);
-      transition: all 0.6s ease;
+      transition: all 0.9s ease;
 
       word-break: normal;
       overflow-wrap: break-word;
