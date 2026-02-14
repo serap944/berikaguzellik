@@ -530,7 +530,7 @@
       display: inline-block;
       margin-top: 20px;
       padding: 14px 28px;
-      background-color: #e91e63;
+      background-color: #d97408;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
@@ -539,7 +539,7 @@
   }
 
   .yol-tarifi-btn:hover {
-      background-color: #c2185b;
+      background-color: #db872d;
       transform: translateY(-3px);
   }
 
