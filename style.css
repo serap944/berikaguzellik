@@ -233,7 +233,7 @@
   }
 
   /* === KART === */
-  .birinci-bolum>.kart {
+  .kart {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -577,7 +577,7 @@
 
   .call {
       background: #000000;
-      min-width: 100px;
+      min-width: 120px;
 
   }
 
@@ -712,15 +712,22 @@
 
       .bottom-bar a {
 
-          padding: 8px 12px;
+          padding: 10px 16px;
 
       }
   }
 
   @media (max-width: 768px) {
 
-      .gridkutusu2 {
+      .birinci-bolum {
           grid-template-columns: 1fr;
+      }
+
+      .kart {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
       }
 
       .slider,
