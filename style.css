@@ -548,7 +548,7 @@
   /* BOTTOM FIXED BUTTONS */
   .bottom-bar {
       position: fixed;
-      min-width: 100%;
+      width: 100%;
       bottom: 0;
       display: flex;
       justify-content: space-between;
