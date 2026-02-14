@@ -57,8 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-
-
     // Alt Menü
     const basliklar = document.querySelectorAll(".baslik");
 
@@ -160,6 +158,12 @@ Bu yüzden:
     // gözlemcinin kimi izleyeceğine karar ver
     document.querySelectorAll(".kart").forEach(kart => {
         observer2.observe(kart);
+    });
+
+    document.querySelectorAll('.kart2').forEach(kart => {
+        kart.addEventListener('click', () => {
+            kart.classList.toggle('aktif');
+        });
     });
 
 });
