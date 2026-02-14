@@ -17,22 +17,53 @@
 <body>
 
     <nav>
-        <a href="/" class="logo">
-            <h3>berika</h3>
-            <p> Güzellik Salonu </p>
+        <a href="/" class="logo"><img src="images/logo2.png">
+            <div class="isim">
+                <h3>berika</h3>
+                <p> Güzellik ve Yaşam Merkezi </p>
+            </div>
         </a>
 
         <div class="social-media">
-            <a href="https://www.instagram.com/kullaniciadi" target="_blank" class="insta-real">
+            <a href="https://www.instagram.com/berikaguzellik/" target="_blank" class="insta-real">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
 
         <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
         <ul class="linklerim">
-            <li><a href="#hakkimizda">Hakkımızda</a></li>
-            <li><a href="#kuafor">kuaför</a></li>
-            <li><a href="#zayiflama">Zayıflama</a></li>
+            <li class="menu-oge acilir">
+                <h4 class="baslik"> LAZER EPİLASYON <i class="fas fa-chevron-down down-icon"></i></h4>
+                <ul class="altlink">
+                    <li><a href="#guzellik">iğne epilasyon</a></li>
+                    <li><a href="#guzellik">buz lazer</a></li>
+                </ul>
+            </li>
+            <li class="menu-oge"><a href="#guzellik">CİLT BAKIMI</a></li>
+
+            <li class="menu-oge acilir">
+                <h4 class="baslik"> KUAFÖR <i class="fas fa-chevron-down down-icon"></i></h4>
+                <ul class="altlink">
+                    <li><a href="#kuafor">Saç Kesimi</a></li>
+                    <li><a href="#kuafor">Boyama</a></li>
+                    <li><a href="#tirnak">Tıırnak bakımı</a></li>
+
+                </ul>
+            </li>
+            <li class="menu-oge"><a href="#diyet">DİYET</a></li>
+            <li class="menu-oge"><a href="#plates">PLATES</a></li>
+
+            <li class="menu-oge acilir">
+                <h4 class="baslik"> ÜRÜNLERİMİZ<i class="fas fa-chevron-down down-icon"></i></h4>
+                <ul class="altlink">
+
+                    <li><a href="#"> Jeller</a></li>
+                    <li><a href="#">Kremler</a></li>
+
+                </ul>
+            </li>
+
         </ul>
     </nav>
 
@@ -83,11 +114,11 @@
     <section class="container">
         <h1>Güzellik Bloğu</h1>
 
-        <div class="gridkutusu2">
+        <div class="birinci-bolum" id="guzellik">
 
             <!-- Kart 1 -->
             <div class="kart">
-                <img src="images/lazer.png" alt="Lazer Epilasyon" class="gridresim">
+                <img src="images/lazer.png" alt="Lazer Epilasyon" class="ilkalan-resim">
                 <div class="aciklama">
                     <h2>Lazer Epilasyon Nedir?</h2>
                     <p>
@@ -106,7 +137,7 @@
 
             <!-- Kart 2 -->
             <div class="kart">
-                <img src="images/cilt-bakimi3.png" alt="Cilt Bakımı" class="gridresim">
+                <img src="images/cilt-bakimi3.png" alt="Cilt Bakımı" class="ilkalan-resim">
                 <div class="aciklama">
                     <h2>Cilt Bakımı Nedir?</h2>
                     <p>
@@ -126,7 +157,7 @@
 
             <!-- Kart 3 -->
             <div class="kart">
-                <img src="images/leke-tedavisia.png" alt="Leke Tedavisi" class="gridresim">
+                <img src="images/leke-tedavisia.png" alt="Leke Tedavisi" class="ilkalan-resim">
                 <div class="aciklama">
                     <h2>Leke Tedavisi Nedir?</h2>
                     <p>
@@ -145,7 +176,7 @@
 
             <!-- Kart 4 -->
             <div class="kart">
-                <img src="images/ipek-kirpik.jpg" alt="İpek Kirpik" class="gridresim">
+                <img src="images/ipek-kirpik.jpg" alt="İpek Kirpik" class="ilkalan-resim">
                 <div class="aciklama">
                     <h2>İpek Kirpik</h2>
                     <p>
@@ -164,7 +195,7 @@
 
             <!-- Kart 5 -->
             <div class="kart">
-                <img src="images/kas-tasarimi.webp" alt="Kaş Tasarımı" class="gridresim">
+                <img src="images/kas-tasarimi.webp" alt="Kaş Tasarımı" class="ilkalan-resim">
                 <div class="aciklama">
                     <h2>Kaş Tasarımı</h2>
                     <p>
@@ -187,7 +218,7 @@
     <section class="container" id="kuafor">
         <h1>Kuaför Hizmetlerimiz</h1>
 
-        <div class="gridkutusu">
+        <div class="ikinci-bolum">
 
             <!-- 1 -->
             <div class="kart2">
@@ -229,7 +260,7 @@
             </div>
 
             <!-- 4 -->
-            <div class="kart2">
+            <div class="kart2" id="tirnak">
                 <div class="kart-ic">
                     <div class="on">
                         <img src="images/tirnak.avif">
@@ -316,7 +347,33 @@
             </figure>
 
         </article>
+        <article class="kart3" id="plates">
+            <div class="bilgi">
+                <h3> PLATES </h3>
+                <p>
 
+                    ✨ Daha Güçlü, Daha Dengeli, Daha Zarif Bir Sen <br>
+
+                    Plates derslerimiz; bedeninizi güçlendirmek, esnekliğinizi artırmak ve duruşunuzu düzeltmek için
+                    özel olarak planlanmıştır. Uzman eğitmenler eşliğinde yapılan çalışmalar sayesinde hem fiziksel hem
+                    zihinsel olarak kendinizi daha enerjik hissedersiniz.
+
+                    Modern yaşamın getirdiği hareketsizlik, duruş bozuklukları ve stres; zamanla vücutta ağrı ve şekil
+                    bozukluklarına neden olabilir. Plates ile:
+
+                    ✔ Kaslarınızı güçlendirir
+                    ✔ Karın ve bel bölgesini sıkılaştırır
+                    ✔ Duruş bozukluklarını düzeltir
+                    ✔ Esnekliği artırır
+                    ✔ Stresi azaltır
+                    ✔ Daha fit ve şekilli bir vücuda kavuşmanıza yardımcı olur
+
+            </div>
+            <figure class="bilgiresim">
+                <img src="images/plates3.png" alt="plates hizmeti">
+            </figure>
+
+        </article>
     </section>
 
 
